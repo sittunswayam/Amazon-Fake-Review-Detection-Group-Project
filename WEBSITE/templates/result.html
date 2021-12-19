@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<h1 style="text-align: center"><a href="/" style="color: #ffee93; text-decoration: none">Amazon Reviews Classifier</a></h1>
+		
+	</div>
+	</header>
+	<h2 style="font-size:20; text-align: center; color: #ffee93"><b>Results</b></h2>
+	<div class="results">
+	
+	{% if prediction == -1 %}
+	<br>
+	<h2 style="color:#e47171; text-align: center">Gibberish detected. <a href="/" style="color: #ffee93; text-decoration: none">Retry</a> with valid text data</h3>
+	{% elif prediction == 1 %}
+	<h2 style="color:#e47171; text-align: center">Fake Review</h3>
+	{% elif prediction == 0 %}
+	<h2 style="color:greenyellow; text-align: center">Real Review</h3>
+	{% endif %}
+
+	{% if prediction != -1 %}
+	<h3 style="text-align: center; color: #fff"> Confidence = {{confidence}}%</h3>
+	{% endif %}
+
+	</div>
+
+</body>
+</html>

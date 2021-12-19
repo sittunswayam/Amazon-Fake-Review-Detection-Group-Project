@@ -1,0 +1,61 @@
+body{
+	font:15px/1.5 Sans-Serif;
+	padding: 0px;
+	background-image: url('bezos1.jpeg');
+}
+
+.container{
+	width:100%;
+	margin: auto;
+	overflow: hidden;
+}
+
+header{
+	height:120px;
+	width:100%;
+	padding-top:30px;
+	font:15px/1.5 Sans-Serif;
+	border-radius: 12px;
+}
+
+.main-header{
+	text-align:center;
+	background-color: blue;
+	height:100px;
+	width:100%;
+	margin:0px;
+	font:15px/1.5 Sans-Serif;
+}
+
+textarea {
+    border-radius: 7px;
+}
+
+#brandname{
+	float:left;
+	font-size:30px;
+	color: #85cdc8;
+	margin: 10px;
+}
+
+header h2{
+	text-align:center;
+	color:#fff;
+	font:15px/1.5 Sans-Serif;
+}
+
+.btn-info {background-color: #ffee93;
+	height:30px;
+	width:100px;
+    border-radius: 7px;}
+.btn-info:hover {background: #ffee93;}
+
+.results{
+	border-radius: 12px;
+    background: #0078d7;
+	margin: 0 auto;
+    padding: 20px; 
+    width: 60%;
+    height: 125px;
+	font:15px/1.5 Sans-Serif;
+}

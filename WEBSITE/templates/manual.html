@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manual</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<h1 style="text-align: center"><a href="/" style="color: #ffee93; text-decoration: none">Amazon Reviews Classifier</a></h1>
+		
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="{{url_for('predictmanual')}}" style="text-align: center" method="POST">
+
+		<br>
+		<label for="Rating" style="text-align: center; color: #fff">Choose a rating:</label>
+		<select name="Rating" id="Rating">
+			<option value="None">None</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select><br><br>
+
+		<label for="Verified-Purchase" style="text-align: center; color: #fff">Is this a verified purchase? (Y/N)</label>
+		<select name="Verified-Purchase" id="Verified-Purchase">
+			<option value="None">None</option>
+			<option value="Y">Y</option>
+			<option value="N">N</option>
+		</select><br><br>
+
+		<label for="Product Category" style="text-align: center; color: #fff">Choose Product Category: </label>
+		<select name="Product-Category" id="Product-Category">
+			<option value="None">None</option>
+			<option value="PC">PC</option>
+			<option value="Baby">Baby</option>
+			<option value="Office Products">Office Products</option>
+			<option value="Beauty">Beauty</option>
+			<option value="Health and Personal Care">Health and Personal Care</option>
+			<option value="Toys">Toys</option>
+			<option value="Kitchen">Kitchen</option>
+			<option value="Furniture">Furniture</option>
+			<option value="Electronics">Electronics</option>
+			<option value="Camera">Camera</option>
+			<option value="Sports">Sports</option>
+			<option value="Home">Home</option>
+			<option value="Jewelry">Jewelry</option>
+			<option value="Books">Books</option>
+			<option value="Grocery">Grocery</option>
+			<option value="Video DVD">Video DVD</option>
+			<option value="Tools">Tools</option>
+			<option value="Home Improvement">Home Improvement</option>
+			<option value="Shoes">Shoes</option>
+			<option value="Outdoors">Outdoors</option>
+			<option value="Luggage">Luggage</option>
+			<option value="Video Games">Video Games</option>
+			<option value="Apparel">Apparel</option>
+			<option value="Lawn and Garden">Lawn and Garden</option>
+			<option value="Pet Products">Pet Products</option>
+			<option value="Home Entertainment">Home Entertainment</option>
+			<option value="Musical Instruments">Musical Instruments</option>
+			<option value="Watches">Watches</option>
+			<option value="Automotive">Automotive</option>
+		</select><br><br>
+
+        <p style="text-align: center; color: #fff">Enter Review title here:</p>
+		<textarea name="reviewtitle" rows="2" cols="50" style="text-align: center"></textarea>
+		<br/>
+
+		<p style="text-align: center; color: #fff">Enter Review text here:</p>
+		<textarea name="message" rows="4" cols="50" style="text-align: center"></textarea>
+		<br/>
+
+		<br>
+		<input type="submit" class="btn-info" value="Predict" style="text-align: center">
+		
+	</form>
+		
+	</div>
+</body>
+</html>

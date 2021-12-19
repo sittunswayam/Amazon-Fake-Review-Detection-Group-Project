@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<h1 style="text-align: center"><a href="/" style="color: #ffee93; text-decoration: none">Amazon Reviews Classifier</a></h1>
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="{{url_for('predict')}}" style="text-align: center" method="POST">
+		<p style="text-align: center; color: #fff">Enter Review URL here</p>
+		<textarea name="reviewurl" rows="4" cols="50" style="text-align: center"></textarea>
+		<br><br>
+
+		<input type="submit" class="btn-info" value="Predict" style="text-align: center"><br><br>
+		
+		<p style="text-align: center;"><a href="manual" style="color: #fff">Click here to manually enter review data</a></p>
+		<p style="text-align: center;"><a href="https://public.tableau.com/app/profile/atrima.ghosh/viz/Book1_16380357582440/Dashboard1" style="color: #fff">Interactive Tableau dashboard visualizations for Amazon review data</a></p>
+	</form>
+		
+	</div>
+
+	
+	
+
+</body>
+</html>
