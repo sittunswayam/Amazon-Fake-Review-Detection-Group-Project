@@ -54,7 +54,7 @@ Analysis using BERT (Bidirectional Encoder Representations from Transformers) mo
 
 The web-application hosted on (http://machinelearner.eastus2.cloudapp.azure.com/) allows the user to enter the URL of the review or the text of the review and get a prediction. 
 
-The public Tableau dashboard (https://public.tableau.com/app/profile/zoe.masood/viz/Book1_16383996536860/Dashboard1#1) is also accessible from the website. 
+The public Tableau dashboard (https://public.tableau.com/app/profile/sittun.prakash/viz/Book1_16398770354100/Dashboard1) is also accessible from the website. 
 
 Directory Structure: <br/>
 static <br/>
