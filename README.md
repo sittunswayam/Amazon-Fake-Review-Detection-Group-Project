@@ -5,7 +5,7 @@ Group Project for CSE 6242 @ GeorgiaTech
 This project was created as a part of the graduate course CSE 6242 - Data and Visual Analytics (Fall 2021). <br/>
 Authors: Sittun Swayam Prakash, Atrima Ghosh, Parth Iramani, Zoe Masood, Jenna Gottschalk, Mugundhan Murugesan
 
-![Fake Review Detection Website Demo](https://github.com/sittunswayam/Amazon-Fake-Review-Detection/blob/main/REPORT/demo.gif)
+![Fake Review Detection Website Demo](demo.gif)
 
 ### DESCRIPTION:
 
